@@ -6,14 +6,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
+:root {
   --hover-bg: rgba(63, 81, 181, 0.5) !important;
+  --dark-bg: #1a1a1a;
+  --form-bg: #1a1a1aa8;
 }
 html,
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 
-  background-color: black;
+  background-color: var(--dark-bg);
 }
 body {
   min-height: calc(100lvh - 1em);
@@ -26,4 +28,20 @@ body {
   background-position-y: center;
   background-position-x: center;
   background-image: url("/images/dog-background.jpg");
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 6rem auto;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  background-color: var(--form-bg);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn {
+  width: fit-content;
+  align-self: center;
 }
