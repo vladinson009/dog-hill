@@ -2,10 +2,10 @@
   width: 100%;
   padding-inline: 3em;
   display: flex;
-  gap: 2em;
+  gap: 1em;
   padding-top: 1em;
   flex-direction: column;
-  background-color: black;
+  background-color: var(--dark-bg);
   color: white;
   position: absolute;
   bottom: 0;
