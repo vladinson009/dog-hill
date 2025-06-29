@@ -1,0 +1,32 @@
+.footer {
+  width: 100%;
+  padding-inline: 3em;
+  display: flex;
+  gap: 2em;
+  padding-top: 1em;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50% 0;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  font-size: 2em;
+  i {
+    color: white;
+  }
+}
+.bottom {
+  text-align: center;
+}
+.bottom:before {
+  display: flex;
+  content: "";
+  padding-bottom: 1em;
+  border-top: 1px solid white;
+}

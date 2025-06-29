@@ -1,0 +1,53 @@
+.container {
+  /* position: absolute; */
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  align-items: left;
+  text-align: left;
+  font-size: 1.3em;
+  line-height: 1.4;
+  color: white;
+  height: 500px;
+  text-shadow: 2px 2px 4px black;
+}
+.buttons {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+.carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gray;
+  min-width: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  width: 20px;
+  height: 20px;
+  background-color: #3f51b5; /* Example: Angular Material primary color */
+}
