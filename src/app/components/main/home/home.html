@@ -1,0 +1,23 @@
+<div class="container" @slideAnimation>
+    <div class="inner testimonial-slide" [@carouselAnimation]="activeIndex">
+        <div class="left">
+            <img [src]="testimonials[activeIndex].imageUrl" alt="animal-photo">
+        </div>
+        <div class="right">
+            <h1> {{testimonials[activeIndex].name}} </h1>
+            <p> {{testimonials[activeIndex].message}} </p>
+        </div>
+    </div>
+</div>
+<div class="carousel" @slideAnimation>
+    <div class="dots">
+        @for (testimonial of testimonials; track $index; let i = $index) {
+        <button mat-button class="dot" [class.active]="i === activeIndex" (click)="setActive(i)"> </button>
+        }
+    </div>
+    <div class="buttons">
+        <a matButton="filled" color="accent" [href]="testimonials[activeIndex].role">Visit
+            {{testimonials[activeIndex].name}}</a>
+        <a matButton="filled" color="primary" href="#">Contact Us</a>
+    </div>
+</div>
